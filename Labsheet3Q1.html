@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Calculator</title>
+    <style>
+        body { font-family: Mahak; padding: 30px; text-align: center; }
+        .box { width: 300px; margin: 0 auto; background: #f9f9f9; padding: 20px; border: 1px solid #ccc; border-radius: 8px; }
+        input { width: 90%; padding: 8px; margin: 8px 0; text-align: center; font-size: 16px; }
+        button { padding: 8px 12px; margin: 4px; font-size: 16px; cursor: pointer; }
+        h3 { color: #333; }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h2>Calculator</h2>
+    <input type="number" id="num1" placeholder="Enter first number"><br>
+    <input type="number" id="num2" placeholder="Enter second number"><br>
+
+    <button onclick="calculate('+')">+</button>
+    <button onclick="calculate('-')">-</button>
+    <button onclick="calculate('*')">*</button>
+    <button onclick="calculate('/')">/</button>
+
+    <h3>Result: <span id="result">0</span></h3>
+</div>
+
+<script>
+    function calculate(operator) {
+        let n1 = parseFloat(document.getElementById("num1").value);
+        let n2 = parseFloat(document.getElementById("num2").value);
+        let resField = document.getElementById("result");
+
+        if (isNaN(n1) || isNaN(n2)) {
+            resField.innerText = "Please enter valid numbers!";
+            return;
+        }
+
+        let res = 0;
+        if (operator === '+') res = n1 + n2;
+        else if (operator === '-') res = n1 - n2;
+        else if (operator === '*') res = n1 * n2;
+        else if (operator === '/') {
+            if (n2 === 0) {
+                resField.innerText = "Cannot divide by zero!";
+                return;
+            }
+            res = n1 / n2;
+        }
+        resField.innerText = res;
+    }
+</script>
+
+</body>
+</html>
