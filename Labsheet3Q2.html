@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grade Calculator</title>
+    <style>
+        body { font-family: Mahak; padding: 30px; text-align: center; }
+        .box { width: 300px; margin: 0 auto; background: #f2f2f2; padding: 20px; border-radius: 8px; }
+        input { width: 90%; padding: 8px; margin: 8px 0; text-align: center; }
+        button { padding: 8px 15px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h2>Grade Checker</h2>
+    <input type="number" id="marks" placeholder="Enter marks (0-100)"><br>
+    <button onclick="checkGrade()">Get Grade</button>
+    <h3 id="gradeResult"></h3>
+</div>
+
+<script>
+    function checkGrade() {
+        let marks = parseFloat(document.getElementById("marks").value);
+        let res = document.getElementById("gradeResult");
+
+        if (isNaN(marks) || marks < 0 || marks > 100) {
+            res.innerText = "Please enter valid marks between 0 and 100.";
+            return;
+        }
+
+        let grade = "";
+        if (marks >= 90) grade = "A+";
+        else if (marks >= 80) grade = "A";
+        else if (marks >= 70) grade = "B";
+        else if (marks >= 60) grade = "C";
+        else grade = "Fail";
+
+        res.innerText = "Grade: " + grade;
+    }
+</script>
+
+</body>
+</html>
