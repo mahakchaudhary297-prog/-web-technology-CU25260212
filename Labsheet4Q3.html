@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Methods Demonstration</title>
+    <style>
+        body { font-family: Mahak; padding: 20px; }
+        .box { background: #f9f9f9; padding: 15px; border: 1px solid #ccc; width: 400px; margin-top: 15px; }
+    </style>
+</head>
+<body>
+
+    <h2 id="mainHeading">Student Directory</h2>
+    
+    <ul id="studentList">
+        <li class="item">kunal</li>
+        <li class="item">Muskan</li>
+        <li class="item">Ansh</li>
+    </ul>
+
+    <button onclick="displayDOMData()">Get Info using DOM Methods</button>
+
+    <div class="box" id="output">
+        Click the button to view DOM details.
+    </div>
+
+    <script>
+        function displayDOMData() {
+            // 1. getElementById
+            let headingText = document.getElementById("mainHeading").innerText;
+
+            // 2. getElementsByTagName
+            let listItems = document.getElementsByTagName("li");
+            let totalStudents = listItems.length;
+
+            // 3. querySelector
+            let firstStudent = document.querySelector(".item").innerText;
+
+            // Display results
+            document.getElementById("output").innerHTML = 
+                "<b>Heading (getElementById):</b> " + headingText + "<br>" +
+                "<b>Total List Items (getElementsByTagName):</b> " + totalStudents + "<br>" +
+                "<b>First Student (querySelector):</b> " + firstStudent;
+        }
+    </script>
+
+</body>
+</html>
