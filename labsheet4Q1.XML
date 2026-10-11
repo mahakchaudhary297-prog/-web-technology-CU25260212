@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+    <student>
+        <studentID>S101</studentID>
+        <name>Muskan</name>
+        <course>B.Tech Computer Science</course>
+        <semester>4th</semester>
+        <email>Muskan.@9876.com</email>
+        <marks>88</marks>
+    </student>
+    <student>
+        <studentID>S102</studentID>
+        <name>Kunal</name>
+        <course>BBA Management</course>
+        <semester>2nd</semester>
+        <email>kunak.@1234.com</email>
+        <marks>92</marks>
+    </student>
+    <student>
+        <studentID>S103</studentID>
+        <name>Janvi</name>
+        <course>BCA Information Technology</course>
+        <semester>6th</semester>
+        <email>janvi.@1234.com</email>
+        <marks>79</marks>
+    </student>
+    <student>
+        <studentID>S104</studentID>
+        <name>Ravis</name>
+        <course>B.Tech Electronics</course>
+        <semester>3rd</semester>
+        <email>ravi.d@5677.com</email>
+        <marks>85</marks>
+    </student>
+    <student>
+        <studentID>S105</studentID>
+        <name>Simran</name>
+        <course>B.Sc Information Tech</course>
+        <semester>5th</semester>
+        <email>simran@467.com</email>
+        <marks>90</marks>
+    </student>
+</students>
