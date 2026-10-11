@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Timetable</title>
+</head>
+<body>
+    <h2>College Timetable</h2>
+    <table border="1">
+        <tr>
+            <th>Day / Time</th>
+            <th>9:00 - 10:00 AM</th>
+            <th>10:00 - 11:00 AM</th>
+            <th>11:00 - 11:30 AM</th>
+            <th>11:30 - 12:30 PM</th>
+        </tr>
+        <tr>
+            <td><b>Monday</b></td>
+            <td>Maths</td>
+            <td>Physics</td>
+            <td rowspan="5"><b>L<br>U<br>N<br>C<br>H</b></td>
+            <td>Computer Lab</td>
+        </tr>
+        <tr>
+            <td><b>Tuesday</b></td>
+            <td>Chemistry</td>
+            <td>English</td>
+            <td>Electronics</td>
+        </tr>
+        <tr>
+            <td><b>Wednesday</b></td>
+            <td colspan="2"><b>Workshop (Practical)</b></td>
+            <td>Library</td>
+        </tr>
+        <tr>
+            <td><b>Thursday</b></td>
+            <td>Maths</td>
+            <td>Physics</td>
+            <td>Computer Lab</td>
+        </tr>
+        <tr>
+            <td><b>Friday</b></td>
+            <td>English</td>
+            <td>Chemistry</td>
+            <td>Sports</td>
+        </tr>
+    </table>
+</body>
+</html>
