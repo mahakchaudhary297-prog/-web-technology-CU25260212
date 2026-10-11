@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Programming Languages</title>
+</head>
+<body>
+    <h2>5 Programming Languages (Disc Style)</h2>
+    <ul type="disc">
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>Java</li>
+        <li>C++</li>
+        <li>Ruby</li>
+    </ul>
+
+    <h2>5 Programming Languages (Circle Style)</h2>
+    <ul type="circle">
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>Java</li>
+        <li>C++</li>
+        <li>Ruby</li>
+    </ul>
+
+    <h2>5 Programming Languages (Square Style)</h2>
+    <ul type="square">
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>Java</li>
+        <li>C++</li>
+        <li>Ruby</li>
+    </ul>
+</body>
+</html>
