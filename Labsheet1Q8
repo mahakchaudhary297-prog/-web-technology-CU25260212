@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Display Webpage</title>
+</head>
+<body>
+    <h2>Image Gallery</h2>
+    
+    <p><b>College Logo:</b></p>
+    <img src="https://via.placeholder.com/150" alt="College Logo" width="150" height="150">
+
+    <p><b>Course-Related Image (Computer Lab):</b></p>
+    <img src="https://via.placeholder.com/200x150" alt="Computer Lab Image" width="200" height="150">
+
+    <p><b>Nature Image (Scenery):</b></p>
+    <img src="https://via.placeholder.com/200x150" alt="Nature Image" width="200" height="150">
+</body>
+</html>
