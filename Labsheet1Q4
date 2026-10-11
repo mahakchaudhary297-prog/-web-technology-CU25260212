@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Steps to Create an HTML Webpage</title>
+</head>
+<body>
+    <h2>Steps to Create an HTML Webpage</h2>
+    <ol>
+        <li>Open a simple text editor like Notepad.</li>
+        <li>Type the basic HTML structure (&lt;html&gt;, &lt;head&gt;, &lt;body&gt;).</li>
+        <li>Add your headings, paragraphs, and content inside the body.</li>
+        <li>Save the file with a <b>.html</b> extension (for example: <code>page.html</code>).</li>
+        <li>Double-click the saved file to open and view it in any web browser.</li>
+    </ol>
+</body>
+</html>
