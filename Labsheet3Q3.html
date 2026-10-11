@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiplication Table</title>
+    <style>
+        body { font-family: Mahak; padding: 30px; text-align: center; }
+        .box { width: 300px; margin: 0 auto; background: #fafafa; padding: 20px; border: 1px solid #ccc; border-radius: 8px; }
+        input { width: 90%; padding: 8px; margin: 8px 0; text-align: center; }
+        button { padding: 8px 15px; cursor: pointer; }
+        #output { margin-top: 15px; text-align: left; display: inline-block; }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h2>Multiplication Table</h2>
+    <input type="number" id="num" placeholder="Enter a number"><br>
+    <button onclick="generateTable()">Generate</button>
+    <div id="output"></div>
+</div>
+
+<script>
+    function generateTable() {
+        let n = parseInt(document.getElementById("num").value);
+        let out = document.getElementById("output");
+
+        if (isNaN(n)) {
+            out.innerHTML = "<span style='color:red;'>Please enter a valid number!</span>";
+            return;
+        }
+
+        let html = "";
+        for (let i = 1; i <= 10; i++) {
+            html += n + " × " + i + " = " + (n * i) + "<br>";
+        }
+        out.innerHTML = html;
+    }
+</script>
+
+</body>
+</html>
