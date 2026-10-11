@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+    <book>
+        <bookID>B001</bookID>
+        <title>Learning HTML and CSS</title>
+        <author>Kiran</author>
+        <publisher>Wiley</publisher>
+        <price>45.00</price>
+        <category>Web Development</category>
+    </book>
+    <book>
+        <bookID>B002</bookID>
+        <title>JavaScript: The Good Parts</title>
+        <author>Douglas Crockford</author>
+        <publisher>O'Reilly</publisher>
+        <price>30.00</price>
+        <category>Programming</category>
+    </book>
+    <book>
+        <bookID>B003</bookID>
+        <title>Database System Concepts</title>
+        <author>Abraham Silberschatz</author>
+        <publisher>McGraw-Hill</publisher>
+        <price>65.00</price>
+        <category>Database</category>
+    </book>
+    <book>
+        <bookID>B004</bookID>
+        <title>Data Structures and Algorithms in Java</title>
+        <author>Robert Lafore</author>
+        <publisher>Sams</publisher>
+        <price>50.00</price>
+        <category>Computer Science</category>
+    </book>
+    <book>
+        <bookID>B005</bookID>
+        <title>Principles of Marketing</title>
+        <author>Philip Kotler</author>
+        <publisher>Pearson</publisher>
+        <price>55.00</price>
+        <category>Business</category>
+    </book>
+</library>
