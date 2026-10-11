@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Admission Portal</title>
+</head>
+<body>
+
+    <!-- Heading & Introduction -->
+    <h1>COER University</h1>
+    <p><i>Welcome to the official admission and information portal.</i></p>
+    <hr>
+
+    <!-- Student & College Info (Paragraphs, Bold, Underline) -->
+    <h2>Student Profile</h2>
+    <p><b>Name:</b> Kunal<br>
+       <b>Course:</b> B.Tech Computer Science<br>
+       <b>Semester:</b> 3rd Semester<br>
+       <b>College Name:</b> <u>Kunal</u></p>
+
+    <!-- Courses & Subjects (Nested Lists) -->
+    <h2>Courses Offered and Subjects</h2>
+    <ul>
+        <li>B.Tech Computer Science
+            <ol>
+                <li>Data Structures</li>
+                <li>Algorithms</li>
+            </ol>
+        </li>
+        <li>Bachelor of Business Administration (BBA)
+            <ol>
+                <li>Financial Management</li>
+                <li>Principles of Marketing</li>
+            </ol>
+        </li>
+    </ul>
+
+    <!-- Timetable (Table with rowspan/colspan) -->
+    <h2>Weekly Class Timetable</h2>
+    <table border="1">
+        <tr>
+            <th>Day / Time</th>
+            <th>9:00 - 10:00 AM</th>
+            <th>10:00 - 11:00 AM</th>
+            <th>11:00 - 11:30 AM</th>
+        </tr>
+        <tr>
+            <td><b>Monday</b></td>
+            <td>Data Structures</td>
+            <td>Algorithms</td>
+            <td rowspan="2"><b>BREAK</b></td>
+        </tr>
+        <tr>
+            <td><b>Tuesday</b></td>
+            <td colspan="2"><b>Computer Lab Practical</b></td>
+        </tr>
+    </table>
+
+    <!-- Images (Logo, Course, Nature) -->
+    <h2>Campus Gallery</h2>
+    <p><b>College Logo:</b></p>
+    <img src="https://via.placeholder.com/100" alt="Logo" width="100" height="100">
+
+    <p><b>Course-Related Image:</b></p>
+    <img src="https://via.placeholder.com/150x100" alt="Course Image" width="150" height="100">
+
+    <p><b>Nature Image:</b></p>
+    <img src="https://via.placeholder.com/150x100" alt="Nature Image" width="150" height="100">
+
+    <!-- Registration Form -->
+    <h2>Admission Registration Form</h2>
+    <form>
+        <label>Name:</label><br>
+        <input type="text" name="name"><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email"><br><br>
+
+        <label>Password:</label><br>
+        <input type="password" name="password"><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female<br><br>
+
+        <label>Date of Birth:</label><br>
+        <input type="date" name="dob"><br><br>
+
+        <label>Course:</label><br>
+        <select name="course">
+            <option value="btech">B.Tech</option>
+            <option value="bba">BBA</option>
+        </select><br><br>
+
+        <label>Hobbies:</label><br>
+        <input type="checkbox" name="hobbies" value="Reading"> Reading
+        <input type="checkbox" name="hobbies" value="Sports"> Sports<br><br>
+
+        <label>Address:</label><br>
+        <textarea name="address" rows="3" cols="25"></textarea><br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+
+</body>
+</html>
