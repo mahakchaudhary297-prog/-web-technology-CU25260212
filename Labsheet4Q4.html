@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Modification</title>
+    <style>
+        body { font-family: Mahak; padding: 40px; transition: background-color 0.5s ease; }
+        .content-box { background: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); width: 400px; }
+        button { padding: 10px 15px; background: #007BFF; color: white; border: none; border-radius: 4px; cursor: pointer; margin-top: 15px; }
+    </style>
+</head>
+<body id="pageBody">
+
+    <div class="content-box">
+        <h1 id="myHeading">Original Heading</h1>
+        <p id="myParagraph">This is the original paragraph text. Click the button below to change the heading, paragraph, and background color.</p>
+        <button onclick="changePageStyle()">Click Me</button>
+    </div>
+
+    <script>
+        function changePageStyle() {
+            // Change Heading text
+            document.getElementById("myHeading").innerText = "Heading Changed Successfully!";
+            
+            // Change Paragraph text
+            document.getElementById("myParagraph").innerText = "Amazing! The paragraph content and background color have been dynamically updated using JavaScript DOM methods.";
+            
+            // Change Background Color of the body
+            document.getElementById("pageBody").style.backgroundColor = "#e0f7fa";
+        }
+    </script>
+
+</body>
+</html>
