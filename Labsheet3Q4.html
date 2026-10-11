@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Factorial Calculator</title>
+    <style>
+        body { font-family: Mahak; padding: 30px; text-align: center; }
+        .box { width: 300px; margin: 0 auto; background: #eef2f3; padding: 20px; border-radius: 8px; }
+        input { width: 90%; padding: 8px; margin: 8px 0; text-align: center; }
+        button { padding: 8px 15px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h2>Factorial Finder</h2>
+    <input type="number" id="factNum" placeholder="Enter a positive number"><br>
+    <button onclick="calculateFactorial()">Calculate</button>
+    <h3 id="factResult"></h3>
+</div>
+
+<script>
+    function calculateFactorial() {
+        let n = parseInt(document.getElementById("factNum").value);
+        let res = document.getElementById("factResult");
+
+        if (isNaN(n) || n < 0) {
+            res.innerText = "Please enter a valid non-negative number.";
+            return;
+        }
+
+        let factorial = 1;
+        for (let i = 1; i <= n; i++) {
+            factorial *= i;
+        }
+
+        res.innerText = "Factorial = " + factorial;
+    }
+</script>
+
+</body>
+</html>
