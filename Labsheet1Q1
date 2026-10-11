@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Information</title>
+</head>
+<body>
+    <h1>Student Information</h1>
+    <p><b>Name:</b> Mahak Chaudhary<br>
+       <b>Course:</b> Bachelor of Computer Applications<br>
+       <b>Semester:</b> 3rd Semester<br>
+       <b>College Name:</b> <u>COER university</u></p>
+    
+    <p><i>About Me:</i> Hello! My name is Mahak. I am passionate about learning web development, coding simple programs, and exploring new technologies. I enjoy problem-solving and spending my free time reading tech articles.</p>
+</body>
+</html>
